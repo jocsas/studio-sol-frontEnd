@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500;1,600&display=swap");
+
+body {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  background-color: #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+button:hover {
+  cursor: pointer;
+}
+input:focus {
+  border: 1px solid #ff6600;
+}
+.container {
+  display: flex;
+  max-width: 1000px;
+  margin: 5em auto;
+  width: 100%;
+  height: 588px;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(180deg, #eeeeee 0%, #ffffff 100%);
+}
+h1 {
+  text-transform: uppercase;
+  height: 35px;
+  letter-spacing: -1px;
+  font-size: 24px;
+  margin: 62px auto 5px;
+  background: -webkit-linear-gradient(#ef6c00, #db6300);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+hr {
+  border: none;
+  background-color: #cfcfcf;
+  height: 1px;
+  width: 205px;
+  margin: auto;
+}
+
+.wrapperResult {
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px;
+}
+.resultText {
+  height: 35px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.wrapperDigits {
+}
+.newGameButton {
+  all: unset;
+  width: 130px;
+  height: 42px;
+  text-transform: uppercase;
+  margin-top: 52px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  background: linear-gradient(180deg, #434854 0%, #9e9e9e 100%);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+.refreshIcon {
+  margin: 0 2px 0 6px;
+}
+
+#formGuess {
+  margin-top: 73px;
+  height: 42px;
+}
+.inputGuess {
+  all: unset;
+  width: 217px;
+  height: 100%;
+  border: 1px solid #cfcfcf;
+  border-radius: 4px;
+  margin-right: 11px;
+}
+.buttonSubmit {
+  all: unset;
+  width: 70px;
+  height: 100%;
+  width: 70px;
+  height: 42px;
+  background: linear-gradient(180deg, #ef6c00 0%, #c0661c 100%);
+  border-radius: 4px;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 12px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+}
+.buttonSubmit:disabled {
+  background: #dddddd;
+}
+
+/*Responsividade funcionando baseado no protópito do Figma*/
+
+@media screen and (min-width: 960px) {
+  h1 {
+    margin-top: 44px;
+    font-size: 36px;
+    height: 82px;
+  }
+  hr {
+    width: 255px;
+    margin-top: -25px;
+  }
+  .wrapperResult {
+    margin-top: 49px;
+  }
+  #digit-1,
+  #digit-2,
+  #digit-3 {
+    width: 75px;
+    height: 135px;
+  }
+  #digit-2 {
+    margin: 0 5px 0 5px;
+  }
+  .newGameButton {
+    margin-top: 31px;
+    box-sizing: border-box;
+  }
+}
