@@ -1,0 +1,24 @@
+/*Folha de estilo resonsável por acender os leds de acordo com os segmentos*/
+
+
+.segment, .off{
+fill: #DDDDDD;
+}
+
+.on {
+    fill: #262A34;
+}
+.correct{
+    fill: #32BF00;
+    color: #32BF00;
+}
+.error{
+    fill: #CC3300;
+    color: #CC3300;
+}
+.default{
+    color: #FF6600;
+}
+.hide{
+    display: none;
+}
