@@ -45,11 +45,11 @@ function newGame(resNum) {
         const inputGuess = el.inputTxt.value;
         /*Removendo zero a esquerda caso haja com parseInt e radix 10(base decimal) */
         const guessNum = parseInt(inputGuess, 10);
-        /*Convertendo para o número já correto para string, porque a função handleDigits() recebe uma string
+        /*Convertendo para o número já "parseado" para string, porque a função handleDigits() recebe uma string
         que vai ser divida */
         const guessNumStr = guessNum.toString();
         e.preventDefault();
-        /* Verifica se o campo tem algum caractere e  */
+        /* Verifica se o campo tem algum caractere e faz comparações para definir a cor do dígito ou o texto acima do led*/
         if(inputGuess.length > 0){
             handleDigits(guessNumStr, 'default');
             if(resNum > guessNumStr){
@@ -106,7 +106,6 @@ function displayError(res){
     handleDigits(code, 'error');
     stopGame();
 };
-
 //Função responsável por acender o Digito de led de acordo com o número recebido e estado, para assim definir
 // a cor que o segmento deve acender utilizar 
 function TurnON(number, digit, state){
@@ -129,7 +128,6 @@ function TurnOFF(segment){
 function hideDigit(digit){
     digit.classList.add("hide");
 };
-
 // Função responsável por mostrar novamente o dígito, exemplo: 
 // - usuário digitou 123 (nenhum dígito apaga)
 // - usuário digtou 12 (o último dígito apaga, ficando somente 2 visíveis)

@@ -1,5 +1,4 @@
-/*Folha de estilo resonsável por acender os leds de acordo com os segmentos*/
-
+/*Folha de estilo resonsável por acender os leds de acordo com a cor*/
 
 .segment, .off{
 fill: #DDDDDD;
