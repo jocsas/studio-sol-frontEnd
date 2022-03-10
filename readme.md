@@ -45,6 +45,7 @@ Foi usado uma imagem em .svg com os os segmentos divididos e nomeados com classe
 Foram usadas funções para acender o segmento de acordo com o número pedido.
 Não foi usada biblioteca externa ou fonte própria.
 
-##
+## Execução do aplicativo
+Deve ser utilizado algum local web server como o Live Server do VS Code
 
 > Jocsã Santos
